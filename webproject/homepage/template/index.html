@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Python django example</title>
+</head>
+<body>
+    <h1>Title</h1>
+    <p>blahhhhhhhh</p>
+    <p>{{ my_name | length }}</p>
+    {% for i in my_list %}
+        {% if not i|divisibleby:"2" %}
+            <p> {{ i }} </p>
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
