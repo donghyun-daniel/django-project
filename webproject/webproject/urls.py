@@ -22,7 +22,9 @@ from homepage.views import index, coffee_view, introduction_view
 
 # admin이라는 req가 들어오면 admin.site.urls에서 관리한다
 urlpatterns = [
-    path('coffee/', coffee_view), # 127.0.0.1/coffee
+    path('coffees/', coffee_view), # 127.0.0.1/coffee
+    path('coffees/<int:pk>', coffee_view), # 127.0.0.1/coffee
+    path('coffees/<int:pk>/delete', coffee_view), # 127.0.0.1/coffee
     path('admin/', admin.site.urls), # 127.0.0.1/admin
     path('', introduction_view), # 127.0.0.1/
 ]

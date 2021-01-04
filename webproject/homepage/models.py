@@ -8,9 +8,9 @@ class Introduction(models.Model):
 class Coffee(models.Model):
     def __str__(self): # Coffee 객체를 대표하는 이름이 self.name이 된다
         return self.name
-    name = models.CharField(default = "", null = False, max_length = 30)
+    name = models.CharField(primary_key = True, default = "", null = False, max_length = 30)
     price = models.IntegerField(default = 0)
-    is_ice = models.BooleanField()
+    stock = models.IntegerField(default = 0)
     """
     method에 대해...
     문자열 : CharField
