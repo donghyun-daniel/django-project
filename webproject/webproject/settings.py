@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'h%b+4vd6a-gj!xs6*e&v@gy%mrp-=rwohfq@kwobsm=vtcyxh4'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # 주소를 넣어주면, 주소에 대해 이 장고 프로젝트에 진행하게 함
 ALLOWED_HOSTS = [
