@@ -5,6 +5,10 @@ class Introduction(models.Model):
     def __str__(self):
         return "Who am I?"
 
+class Eda(models.Model):
+    def __str__(self):
+        return "EDA!"
+
 class Coffee(models.Model):
     def __str__(self): # Coffee 객체를 대표하는 이름이 self.name이 된다
         return self.name
